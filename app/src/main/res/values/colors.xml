@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--设置字体颜色-->
+
+    <color name="textTitleColor">#222222</color>
+    <color name="searchText">#eeeeee</color>
+    <color name="textBodyColor">#777777</color>
+    <color name="iconBefore">#666666</color>
+    <color name="iconAfter">#E32113</color>
+    <color name="background">#eeeeee</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="div_white">#FFFFFF</color>
+    <color name="login_out">#E32113</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent1">#12000000</color>
+    <color name="mineGradientBegin">#E32113</color>
+    <color name="mineGradientEnd">#FC2618</color>
+    <color name="loginBtnEnabledFalse">#77E32113</color>
+
+
+    <!--个人信息-->
+    <color name="person_info_bg">#F6F6F6</color>
+    <color name="person_text_left">#2D2D2D</color>
+    <color name="person_text_right">#848484</color>
+
+    <!--搜索框背景-->
+    <color name="search_corner_bg">#eeeeee</color>
+    <color name="search_corner_bg_changed">#D8D8D8</color>
+    <color name="search_bg">#9B9B9B</color>
+    <color name="ic_text_changed">#464A54</color>
+
+    <color name="search_history_bg">#F4F4F4</color>
+    <color name="material_orange">#ffEF6C00</color>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/register_bac_img"
+    tools:context=".activity.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_regist_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/ib_regist_next_back"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_login_back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="30dp"
+            android:text="快速注册"
+            android:textSize="22sp"
+            android:textColor="#2d2d2d"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp">
+
+        <EditText
+            android:id="@+id/et_regist_next_repassword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/et_regist_next_password"
+            android:layout_alignStart="@+id/et_regist_next_password"
+            android:layout_below="@+id/et_regist_next_password"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="确认密码"
+            android:background="@drawable/input_shape"
+            android:inputType="textPassword">
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/et_regist_next_password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_appName"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/input_shape"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="请输入密码"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/tv_appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="设置密码"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            app:fontFamily="sans-serif-condensed" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_regist_next_regist"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/selector_login_btn"
+        android:text="注册"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_isUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="93dp"
+        android:clickable="true"
+        android:text="已有账号？直接登录"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

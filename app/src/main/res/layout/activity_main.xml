@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_navigation" />
+
+    <RadioGroup
+        android:id="@+id/rg_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_white"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/tab_menu_item"
+            android:checked="true"
+            android:drawableTop="@drawable/ic_home_selector"
+            android:text="@string/home" />
+
+        <RadioButton
+            android:id="@+id/rb_sort"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/ic_sort_selector"
+            android:text="@string/sort" />
+
+        <RadioButton
+            android:id="@+id/rb_donate"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/ic_release_selector"
+            android:text="求书" />
+
+        <RadioButton
+            android:id="@+id/rb_order"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/ic_order_selector"
+            android:text="捐书订单" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/ic_mine_selector"
+            android:text="@string/mine" />
+
+    </RadioGroup>
+
+</RelativeLayout>

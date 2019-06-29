@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="6dp"
+    android:background="@drawable/shape_login_error_dialog_corner">
+    <ImageView
+        android:id="@+id/iv_login_error_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_login_error"/>
+    <TextView
+        android:id="@+id/tv_login_error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="4dp"
+        android:text="密码或账号不正确！"
+        android:textSize="16sp"
+        android:textColor="@color/background_white"/>
+
+</LinearLayout>

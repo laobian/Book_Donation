@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LoveValueActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_love_value_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/ib_love_value_back"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_info_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center_horizontal"
+            android:text="我的爱心值"
+            android:textColor="#2d2d2d"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_love_value_donate_number"
+        android:layout_width="360dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/love_value_bac"
+        android:orientation="vertical"
+        android:textSize="20sp">
+
+        <TextView
+            android:id="@+id/tv_love_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="40点"
+            android:textColor="@color/textTitleColor"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_get_donate_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="共捐赠5本书获得44积分" />
+
+        <TextView
+            android:id="@+id/tv_to_donate"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="我要捐赠"
+            android:textAlignment="center"
+            android:textColor="@color/background_white"
+            android:background="@drawable/love_value_donate"
+            />
+
+        <TextView
+            android:id="@+id/tv_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="查看获取爱心值规则" />
+
+    </LinearLayout>
+
+</LinearLayout>

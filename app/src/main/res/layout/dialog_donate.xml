@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/background_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_confirm_project"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/home_banner_img1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_donate_confirm_project_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:gravity="start|center"
+                android:text="@string/project_name"
+                android:textColor="@color/textTitleColor"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tv_confirm_donate_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center"
+                android:text="1本"
+                android:textSize="24sp"
+                android:textColor="@color/iconAfter"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!--划线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/textBodyColor">
+    </View>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_donate_number1"
+                style="@style/default_donate_number"
+                android:text="1"
+                />
+            <TextView
+                android:id="@+id/tv_donate_number2"
+                style="@style/default_donate_number"
+                android:text="2"
+                />
+            <TextView
+                android:id="@+id/tv_donate_number3"
+                style="@style/default_donate_number"
+                android:text="4"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="15dp"
+            >
+            <EditText
+                android:id="@+id/et_donate_number"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:hint="自定义数目"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:background="@drawable/donate_number_bac"
+                />
+            <LinearLayout
+                android:id="@+id/ll_random_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/iv_random_donate_number"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/ic_random"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="随机"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white"
+        >
+        <Button
+            android:id="@+id/btn_donate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/circle"
+            android:text="确定"
+            android:textColor="@color/background_white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

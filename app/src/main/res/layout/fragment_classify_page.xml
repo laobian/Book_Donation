@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.sortFragment.ClassifyPageFragment1">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_classify_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/background"
+            android:descendantFocusability="blocksDescendants">
+
+            <!--轮播图-->
+            <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/banner_classify_page"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:indicator_drawable_selected="@drawable/indicator_roun_rect_selected"
+                app:indicator_drawable_unselected="@drawable/indicator_roun_rect_normal"
+                app:indicator_width="10dp"
+                app:indicator_height="5dp"
+                app:image_scale_type="fit_xy"
+                app:banner_layout="@layout/banner2"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_product_list_grid_classify_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>
